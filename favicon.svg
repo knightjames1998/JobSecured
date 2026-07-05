@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<rect width="64" height="64" fill="#FFC400"/>
+<rect width="64" height="9" fill="#171C22"/>
+<clipPath id="b"><rect width="64" height="9"/></clipPath>
+<g clip-path="url(#b)"><polygon points="-8,9 -4,9 5,0 1,0" fill="#FFC400"/><polygon points="4,9 8,9 17,0 13,0" fill="#FFC400"/><polygon points="16,9 20,9 29,0 25,0" fill="#FFC400"/><polygon points="28,9 32,9 41,0 37,0" fill="#FFC400"/><polygon points="40,9 44,9 53,0 49,0" fill="#FFC400"/><polygon points="52,9 56,9 65,0 61,0" fill="#FFC400"/><polygon points="64,9 68,9 77,0 73,0" fill="#FFC400"/></g>
+<text x="32" y="50" text-anchor="middle" font-family="Archivo Black, Arial Black, sans-serif" font-size="34" fill="#171C22">JS</text>
+</svg>
