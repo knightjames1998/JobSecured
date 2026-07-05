@@ -42,7 +42,7 @@ header{
 .head-in{display:flex;align-items:center;gap:22px;padding:16px 0}
 .wordmark{
   font-family:'Archivo Black',sans-serif;
-  font-size:1.02rem;letter-spacing:.28em;text-decoration:none;
+  font-size:1.18rem;letter-spacing:.22em;text-decoration:none;
 }
 .main-nav{display:flex;gap:22px;margin-left:auto}
 .main-nav a{
@@ -311,5 +311,18 @@ footer{background:var(--ink);color:#CBD5DF;padding:26px 0 96px;border-top:1px so
 .quote cite{display:block;margin-top:10px;font-style:normal;font-weight:700;font-size:.85rem;color:var(--grey)}
 @media(max-width:840px){.local-grid{grid-template-columns:1fr}}
 
-/* ---------- wordmark highlight ---------- */
-.wm-hl{background:var(--yellow);padding:1px 5px 2px;margin-left:1px}
+/* ---------- wordmark highlight (marker-swipe, matches Logo A) ---------- */
+.wm-hl{
+  position:relative;
+  isolation:isolate;
+  padding:2px 12px 3px 9px;
+  margin-left:5px;
+}
+.wm-hl::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:var(--yellow);
+  transform:skewX(-16deg);
+  z-index:-1;
+}
