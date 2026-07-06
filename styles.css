@@ -3,6 +3,7 @@
    Ink / safety yellow / hazard stripe. Mobile-first.
    ========================================================== */
 :root{
+  --paper:#F9F7F3;
   --ink:#171C22;
   --ink-soft:#242B33;
   --panel:#F1F3F6;
@@ -19,7 +20,7 @@ html{scroll-behavior:smooth;scroll-padding-top:74px}
 body{
   font-family:'Archivo',system-ui,-apple-system,sans-serif;
   color:var(--ink);
-  background:var(--white);
+  background:var(--paper);
   line-height:1.55;
   -webkit-font-smoothing:antialiased;
 }
@@ -36,7 +37,7 @@ img{max-width:100%;display:block}
 /* ---------- header / nav ---------- */
 header{
   position:sticky;top:0;z-index:40;
-  background:var(--white);
+  background:var(--paper);
   border-bottom:1px solid var(--line);
 }
 .head-in{display:flex;align-items:center;gap:22px;padding:16px 0}
@@ -67,7 +68,7 @@ header{
 .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 .mobile-nav{
   display:none;flex-direction:column;
-  border-top:1px solid var(--line);background:var(--white);
+  border-top:1px solid var(--line);background:var(--paper);
 }
 .mobile-nav.open{display:flex}
 .mobile-nav a{
@@ -98,7 +99,7 @@ header{
 }
 .btn-solid{background:var(--yellow);color:var(--ink)}
 .btn-solid:hover{background:var(--yellow-hover)}
-.btn-ghost{background:var(--white);color:var(--ink)}
+.btn-ghost{background:var(--paper);color:var(--ink)}
 .btn-ghost:hover{background:var(--panel)}
 .cta-note{margin-top:14px;font-size:.85rem;color:var(--faint)}
 
