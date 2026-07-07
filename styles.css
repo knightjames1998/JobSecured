@@ -9,9 +9,9 @@
   --panel:#F1F3F6;
   --yellow:#FFC400;
   --yellow-hover:#FFD23D;
-  --amber:#9A7800;
+  --amber:#7A5F00;
   --grey:#4E5A66;
-  --faint:#7C8894;
+  --faint:#5C6874;
   --white:#FFFFFF;
   --line:#DDE2E8;
 }
@@ -327,3 +327,19 @@ footer{background:var(--ink);color:#CBD5DF;padding:26px 0 96px;border-top:1px so
   transform:skewX(-16deg);
   z-index:-1;
 }
+
+/* ---------- accessibility + header spacing (Jul 2026) ---------- */
+/* breathing room so the wordmark doesn't hug the screen edge */
+header .wrap{padding:0 30px}
+.mobile-nav a{padding-left:30px;padding-right:30px}
+
+/* keyboard focus on FAQ accordions (summary wasn't covered) */
+summary:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+
+/* skip link for keyboard and screen reader users */
+.skip-link{
+  position:absolute;left:-9999px;top:0;z-index:60;
+  background:var(--ink);color:var(--yellow);
+  font-weight:800;padding:12px 18px;text-decoration:none;
+}
+.skip-link:focus{left:0}
