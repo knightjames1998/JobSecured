@@ -1,9 +1,9 @@
 /* ==========================================================
-   JobSecured — Day Shift design system
+   JobSecured - Day Shift design system
    Ink / safety yellow / hazard stripe. Mobile-first.
    ========================================================== */
 :root{
-  --paper:#F5F3F0;
+  --paper:#F9F7F3;
   --ink:#171C22;
   --ink-soft:#242B33;
   --panel:#F1F3F6;
@@ -40,7 +40,7 @@ header{
   background:var(--paper);
   border-bottom:1px solid var(--line);
 }
-.head-in{display:flex;align-items:center;gap:22px;padding:16px 0;padding-left:8px}
+.head-in{display:flex;align-items:center;gap:22px;padding:16px 0}
 .wordmark{
   font-family:'Archivo Black',sans-serif;
   font-size:1.18rem;letter-spacing:.22em;text-decoration:none;
@@ -236,7 +236,7 @@ input[type=range]::-moz-range-thumb{
 }
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";font-family:'Archivo Black',sans-serif;color:var(--amber);font-size:1.2rem}
-.faq details[open] summary::after{content:"–"}
+.faq details[open] summary::after{content:"-"}
 .faq .a{padding:0 0 20px;font-size:.95rem;color:var(--grey);max-width:720px}
 
 /* ---------- contact / lead form ---------- */

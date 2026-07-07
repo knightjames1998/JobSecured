@@ -1,4 +1,4 @@
-/* JobSecured — site interactions
+/* JobSecured - site interactions
    1. Missed-call ROI calculator
    2. Mobile nav toggle
    3. Scroll reveals (respects reduced motion)
@@ -10,7 +10,7 @@
   // Signal that JS is alive; reveal animations only engage after this.
   document.documentElement.classList.add("js-ready");
 
-  var PLAN_PRICE = 299;        // Full Coverage — single source of truth
+  var PLAN_PRICE = 299;        // Full Coverage - single source of truth
   var LOW_VOLUME_NET = 500;    // at or below this net/mo, suggest the starter tier
   var fmt = function (n) {
     return "$" + Math.round(n).toLocaleString("en-US");
@@ -41,11 +41,11 @@
     } else if (net <= LOW_VOLUME_NET) {
       note.innerHTML =
         "That's <strong>" + fmt(net * 12) + "</strong> a year back. At this volume, " +
-        "<strong>Missed\u2011Call Guard at $199</strong> may fit better \u2014 same 24/7 pickup, lower cost.";
+        "<strong>Missed\u2011Call Guard at $199</strong> may fit better - same 24/7 pickup, lower cost.";
     } else {
       note.innerHTML =
         "That's <strong>" + fmt(net * 12) +
-        "</strong> a year \u2014 from calls you're already getting.";
+        "</strong> a year - from calls you're already getting.";
     }
   }
   [missed, ticket, close].forEach(function (el) {
@@ -96,7 +96,7 @@
         // captured by SMS beats a form that apologizes.
         e.preventDefault();
         var fd = new FormData(form);
-        var body = "Callback request \u2014 " + (fd.get("name") || "") +
+        var body = "Callback request - " + (fd.get("name") || "") +
           (fd.get("company") ? ", " + fd.get("company") : "") +
           ". Best number: " + (fd.get("phone") || "");
         window.location.href = "sms:+12105000096?&body=" + encodeURIComponent(body);
