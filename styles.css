@@ -312,6 +312,24 @@ footer{background:var(--ink);color:#CBD5DF;padding:26px 0 96px;border-top:1px so
 .quote cite{display:block;margin-top:10px;font-style:normal;font-weight:700;font-size:.85rem;color:var(--grey)}
 @media(max-width:840px){.local-grid{grid-template-columns:1fr}}
 
+/* ---------- google review band ---------- */
+.review-band{
+  background:var(--ink);
+  color:var(--white);
+  padding:56px 0;
+}
+.review-in{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:28px;flex-wrap:wrap;
+}
+.review-stars{display:flex;gap:4px;color:var(--yellow);margin-bottom:12px}
+.review-copy h2{font-size:1.5rem;font-weight:800;margin-bottom:8px}
+.review-copy p{max-width:520px;color:#C4CCD4;font-size:.95rem}
+.review-btn{white-space:nowrap}
+@media(max-width:840px){
+  .review-in{flex-direction:column;align-items:flex-start}
+}
+
 /* ---------- wordmark highlight (marker-swipe, matches Logo A) ---------- */
 .wm-hl{
   position:relative;
