@@ -30,7 +30,10 @@ img{max-width:100%;display:block}
 
 .hazard{
   height:12px;
-  background:var(--white);
+  background:repeating-linear-gradient(-55deg,var(--yellow) 0 14px,var(--ink) 14px 30px);
+}
+.hazard-top{
+  background:var(--paper);
   border-bottom:1px solid var(--line);
 }
 .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
