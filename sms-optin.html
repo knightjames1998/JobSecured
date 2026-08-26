@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Message Sign-Up | JobSecured</title>
+<meta name="description" content="Optional sign-up for JobSecured text notifications. Consent is never required to use our service.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://jobsecured.co/sms-optin.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#171C22;
+    --yellow:#FFC400;
+    --grey:#4E5A66;
+    --faint:#5C6874;
+    --panel:#F1F3F6;
+    --line:#DDE2E8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',-apple-system,sans-serif;color:var(--ink);background:#fff;line-height:1.65;font-size:16px}
+  .hazard{height:10px;background:repeating-linear-gradient(-45deg,var(--ink) 0 14px,var(--yellow) 14px 28px)}
+  header{padding:22px 24px;border-bottom:1px solid var(--line)}
+  .wrap{max-width:760px;margin:0 auto}
+  .wordmark{font-family:'Archivo Black',sans-serif;font-size:22px;letter-spacing:.5px;text-decoration:none;color:var(--ink);display:inline-block}
+  .wordmark .swipe{position:relative;display:inline-block;padding:2px 10px;margin-left:2px}
+  .wordmark .swipe::before{content:"";position:absolute;inset:0;background:var(--yellow);transform:skewX(-16deg);z-index:-1}
+  main{padding:48px 24px 72px}
+  .eyebrow{font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);margin-bottom:10px}
+  h1{font-family:'Archivo Black',sans-serif;font-size:clamp(28px,5vw,40px);line-height:1.1;margin-bottom:8px}
+  .effective{color:var(--grey);font-size:14px;margin-bottom:36px}
+  h2{font-family:'Archivo Black',sans-serif;font-size:19px;margin:36px 0 12px;padding-left:14px;border-left:5px solid var(--yellow)}
+  h3{font-family:'Archivo Black',sans-serif;font-size:15px;margin:24px 0 8px}
+  p{margin-bottom:14px;color:#222}
+  ul{margin:0 0 14px 22px}
+  li{margin-bottom:8px;color:#222}
+  .callout{background:var(--panel);border-left:5px solid var(--yellow);padding:16px 18px;margin:20px 0;font-weight:600}
+  a{color:var(--ink);font-weight:600}
+  footer{background:var(--ink);color:#CBD5DF;padding:28px 24px;font-size:14px}
+  footer a{color:var(--yellow);text-decoration:none;font-weight:600}
+  .footlinks{margin-top:8px}
+  .footlinks a{margin-right:18px}
+  label.field{display:block;font-weight:600;font-size:14px;margin:16px 0 6px}
+  input[type=text],input[type=tel],input[type=email]{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:6px;font-family:inherit;font-size:16px}
+  .consent{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border-left:5px solid var(--yellow);padding:16px 18px;margin:24px 0}
+  .consent input{margin-top:4px;width:20px;height:20px;flex:none}
+  .consent span{font-size:14px;line-height:1.55}
+  .optional{display:inline-block;background:var(--ink);color:var(--yellow);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:3px;margin-bottom:8px}
+  button{background:var(--yellow);color:var(--ink);border:none;font-family:'Archivo Black',sans-serif;font-size:16px;padding:14px 28px;border-radius:6px;cursor:pointer;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="hazard hazard-top"></div>
+<header>
+  <div class="wrap">
+    <a class="wordmark" href="index.html">JOB<span class="swipe">SECURED</span></a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="eyebrow">Text notifications</p>
+    <h1>Text Message Sign-Up</h1>
+    <p class="effective">Optional. Effective August 10, 2026.</p>
+
+    <p>Use this form to sign up for text notifications from JobSecured. Signing up is completely optional.</p>
+
+    <div class="callout">Consent to receive text messages is not required to use JobSecured, to purchase any plan, to book an appointment, or to complete any transaction. If you do not sign up here, you still receive everything by email and phone exactly as normal.</div>
+
+    <h2>What you would receive</h2>
+    <ul>
+      <li><strong>Business clients:</strong> a call summary text after an answered call, so you see the lead before you get back to the truck. Approximately one message per answered call.</li>
+      <li><strong>Callers who booked service:</strong> an appointment confirmation and a reminder. Approximately one to three messages per appointment.</li>
+    </ul>
+    <p>These are service and transactional messages only. We do not send promotional blasts on this program.</p>
+
+    <h2>Sign up</h2>
+    <span class="optional">Optional</span>
+    <form action="https://formspree.io/f/mnjkrvor" method="POST">
+      <input type="hidden" name="_subject" value="SMS opt-in">
+      <input type="hidden" name="form_type" value="sms_optin">
+
+      <label class="field" for="name">Your name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label class="field" for="business">Business name</label>
+      <input type="text" id="business" name="business">
+
+      <label class="field" for="phone">Mobile number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label class="field" for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <div class="consent">
+        <input type="checkbox" id="sms_consent" name="sms_consent" value="I agree to receive text messages from JobSecured">
+        <span><strong>I agree to receive text messages from JobSecured</strong> at the mobile number above. Message frequency varies with call and appointment activity, approximately 1 message per answered call for business clients and 1 to 3 messages per appointment for callers. Message and data rates may apply. Reply STOP to opt out at any time, or HELP for help. This is optional and is not a condition of purchase. See our <a href="sms-terms.html">SMS Terms</a> and <a href="privacy.html">Privacy Policy</a>.</span>
+      </div>
+
+      <button type="submit">Sign up for texts</button>
+    </form>
+
+    <h2>Changing your mind</h2>
+    <p>Reply STOP to any message to stop receiving texts. You get one confirmation and nothing after that. Reply HELP for support, or email <a href="mailto:james@jobsecured.co">james@jobsecured.co</a>. Opting out of texts does not affect your service in any way.</p>
+
+    <h2>Your number</h2>
+    <p>Text messaging originator opt-in data and consent are not shared with any third parties for marketing purposes. Full detail is in our <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>JobSecured LLC, San Antonio, Texas</div>
+    <div class="footlinks">
+      <a href="index.html">Home</a>
+      <a href="sms-terms.html">SMS Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+<div class="hazard"></div>
+</body>
+</html>
